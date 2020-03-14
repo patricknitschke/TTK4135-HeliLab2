@@ -7,9 +7,9 @@
  *
  * Code generation for model "helicopter".
  *
- * Model version              : 1.191
+ * Model version              : 1.193
  * Simulink Coder version : 8.9 (R2015b) 13-Aug-2015
- * C source code generated on : Mon Feb 03 20:51:11 2020
+ * C source code generated on : Mon Mar 09 17:40:01 2020
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -62,7 +62,7 @@ static const char_T * rtDataTypeNames[] = {
 
 /* data type transitions for block I/O structure */
 static DataTypeTransition rtBTransitions[] = {
-  { (char_T *)(&helicopter_B.From), 0, 0, 30 }
+  { (char_T *)(&helicopter_B.TravelCounttorad), 0, 0, 29 }
   ,
 
   { (char_T *)(&helicopter_DW.HILInitialize_AIMinimums[0]), 0, 0, 70 },

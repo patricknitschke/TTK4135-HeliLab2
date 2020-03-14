@@ -559,96 +559,92 @@
     ;%
     ;% Auto data (helicopter_B)
     ;%
-      section.nData     = 22;
-      section.data(22)  = dumData; %prealloc
+      section.nData     = 21;
+      section.data(21)  = dumData; %prealloc
       
-	  ;% helicopter_B.From
+	  ;% helicopter_B.TravelCounttorad
 	  section.data(1).logicalSrcIdx = 0;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% helicopter_B.TravelCounttorad
+	  ;% helicopter_B.Gain
 	  section.data(2).logicalSrcIdx = 1;
 	  section.data(2).dtTransOffset = 1;
 	
-	  ;% helicopter_B.Gain
+	  ;% helicopter_B.Gain_d
 	  section.data(3).logicalSrcIdx = 2;
 	  section.data(3).dtTransOffset = 2;
 	
-	  ;% helicopter_B.Gain_d
+	  ;% helicopter_B.PitchCounttorad
 	  section.data(4).logicalSrcIdx = 3;
 	  section.data(4).dtTransOffset = 3;
 	
-	  ;% helicopter_B.PitchCounttorad
+	  ;% helicopter_B.Gain_i
 	  section.data(5).logicalSrcIdx = 4;
 	  section.data(5).dtTransOffset = 4;
 	
-	  ;% helicopter_B.Gain_i
+	  ;% helicopter_B.Gain_b
 	  section.data(6).logicalSrcIdx = 5;
 	  section.data(6).dtTransOffset = 5;
 	
-	  ;% helicopter_B.Gain_b
+	  ;% helicopter_B.ElevationCounttorad
 	  section.data(7).logicalSrcIdx = 6;
 	  section.data(7).dtTransOffset = 6;
 	
-	  ;% helicopter_B.ElevationCounttorad
+	  ;% helicopter_B.Gain_e
 	  section.data(8).logicalSrcIdx = 7;
 	  section.data(8).dtTransOffset = 7;
 	
-	  ;% helicopter_B.Gain_e
+	  ;% helicopter_B.Sum
 	  section.data(9).logicalSrcIdx = 8;
 	  section.data(9).dtTransOffset = 8;
 	
-	  ;% helicopter_B.Sum
+	  ;% helicopter_B.Gain_dg
 	  section.data(10).logicalSrcIdx = 9;
 	  section.data(10).dtTransOffset = 9;
 	
-	  ;% helicopter_B.Gain_dg
+	  ;% helicopter_B.Gain1
 	  section.data(11).logicalSrcIdx = 10;
 	  section.data(11).dtTransOffset = 10;
 	
-	  ;% helicopter_B.Gain1
-	  section.data(12).logicalSrcIdx = 11;
-	  section.data(12).dtTransOffset = 11;
-	
 	  ;% helicopter_B.Sum_g
+	  section.data(12).logicalSrcIdx = 11;
+	  section.data(12).dtTransOffset = 16;
+	
+	  ;% helicopter_B.From1
 	  section.data(13).logicalSrcIdx = 12;
 	  section.data(13).dtTransOffset = 17;
 	
-	  ;% helicopter_B.From1
-	  section.data(14).logicalSrcIdx = 13;
-	  section.data(14).dtTransOffset = 18;
-	
 	  ;% helicopter_B.Feedbackgain
+	  section.data(14).logicalSrcIdx = 13;
+	  section.data(14).dtTransOffset = 21;
+	
+	  ;% helicopter_B.Subtract1
 	  section.data(15).logicalSrcIdx = 14;
 	  section.data(15).dtTransOffset = 22;
 	
-	  ;% helicopter_B.Subtract1
+	  ;% helicopter_B.Sum1
 	  section.data(16).logicalSrcIdx = 15;
 	  section.data(16).dtTransOffset = 23;
 	
-	  ;% helicopter_B.Sum1
+	  ;% helicopter_B.Sum2
 	  section.data(17).logicalSrcIdx = 16;
 	  section.data(17).dtTransOffset = 24;
 	
-	  ;% helicopter_B.Sum2
+	  ;% helicopter_B.K_ei
 	  section.data(18).logicalSrcIdx = 17;
 	  section.data(18).dtTransOffset = 25;
 	
-	  ;% helicopter_B.K_ei
+	  ;% helicopter_B.Gain_l
 	  section.data(19).logicalSrcIdx = 18;
 	  section.data(19).dtTransOffset = 26;
 	
-	  ;% helicopter_B.Gain_l
+	  ;% helicopter_B.BackmotorSaturation
 	  section.data(20).logicalSrcIdx = 19;
 	  section.data(20).dtTransOffset = 27;
 	
-	  ;% helicopter_B.BackmotorSaturation
+	  ;% helicopter_B.FrontmotorSaturation
 	  section.data(21).logicalSrcIdx = 20;
 	  section.data(21).dtTransOffset = 28;
-	
-	  ;% helicopter_B.FrontmotorSaturation
-	  section.data(22).logicalSrcIdx = 21;
-	  section.data(22).dtTransOffset = 29;
 	
       nTotData = nTotData + section.nData;
       sigMap.sections(1) = section;
@@ -803,7 +799,7 @@
 	  section.data(6).logicalSrcIdx = 20;
 	  section.data(6).dtTransOffset = 5;
 	
-	  ;% helicopter_DW.p_c_PWORK.LoggedData
+	  ;% helicopter_DW.p_cu_k_PWORK.LoggedData
 	  section.data(7).logicalSrcIdx = 21;
 	  section.data(7).dtTransOffset = 6;
 	
@@ -950,8 +946,8 @@
   ;%
 
 
-  targMap.checksum0 = 3621657909;
-  targMap.checksum1 = 3777463859;
-  targMap.checksum2 = 4259787433;
-  targMap.checksum3 = 3206432471;
+  targMap.checksum0 = 188187227;
+  targMap.checksum1 = 1185548655;
+  targMap.checksum2 = 326437505;
+  targMap.checksum3 = 605872488;
 

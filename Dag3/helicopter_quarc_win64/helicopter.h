@@ -7,9 +7,9 @@
  *
  * Code generation for model "helicopter".
  *
- * Model version              : 1.191
+ * Model version              : 1.193
  * Simulink Coder version : 8.9 (R2015b) 13-Aug-2015
- * C source code generated on : Mon Feb 03 20:51:11 2020
+ * C source code generated on : Mon Mar 09 17:40:01 2020
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -818,7 +818,6 @@
 
 /* Block signals (auto storage) */
 typedef struct {
-  real_T From;                         /* '<S6>/From' */
   real_T TravelCounttorad;             /* '<S4>/Travel: Count to rad' */
   real_T Gain;                         /* '<S14>/Gain' */
   real_T Gain_d;                       /* '<S15>/Gain' */
@@ -889,7 +888,7 @@ typedef struct {
 
   struct {
     void *LoggedData;
-  } p_c_PWORK;                         /* '<S6>/p_c' */
+  } p_cu_k_PWORK;                      /* '<S6>/p_c = u_k' */
 
   struct {
     void *LoggedData;
@@ -1242,7 +1241,7 @@ struct P_helicopter_T_ {
   boolean_T HILInitialize_set_pwm_params__f;/* Mask Parameter: HILInitialize_set_pwm_params__f
                                              * Referenced by: '<Root>/HIL Initialize'
                                              */
-  real_T travel_offset_Value;          /* Expression: 2*3.1415926
+  real_T travel_offset_Value;          /* Expression: 3.141592653589793
                                         * Referenced by: '<S1>/travel_offset'
                                         */
   real_T TravelCounttorad_Gain;        /* Expression: 2*pi/8192

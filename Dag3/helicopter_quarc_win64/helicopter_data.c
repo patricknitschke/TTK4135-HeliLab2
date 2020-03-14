@@ -7,9 +7,9 @@
  *
  * Code generation for model "helicopter".
  *
- * Model version              : 1.191
+ * Model version              : 1.193
  * Simulink Coder version : 8.9 (R2015b) 13-Aug-2015
- * C source code generated on : Mon Feb 03 20:51:11 2020
+ * C source code generated on : Mon Mar 09 17:40:01 2020
  *
  * Target selection: quarc_win64.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -23,31 +23,31 @@
 
 /* Block parameters (auto storage) */
 P_helicopter_T helicopter_P = {
-  11.484879374787633,                  /* Variable: K_ed
+  11.308188922867823,                  /* Variable: K_ed
                                         * Referenced by: '<S7>/K_ed'
                                         */
-  0.28712198436969083,                 /* Variable: K_ei
+  0.28270472307169559,                 /* Variable: K_ei
                                         * Referenced by: '<S7>/K_ei'
                                         */
-  2.8712198436969083,                  /* Variable: K_ep
+  2.8270472307169556,                  /* Variable: K_ep
                                         * Referenced by: '<S7>/K_ep'
                                         */
 
   /*  Variable: K_lqr
    * Referenced by: '<S6>/Feedback gain'
    */
-  { -2.8106658452058291, -6.8284065046390765, 2.90143949207798,
-    1.0210019860845831 },
-  5.4067278287461775,                  /* Variable: K_pd
+  { -2.8013446049063653, -6.8091001700482341, 2.8924886648127903,
+    1.0173746781267017 },
+  5.3235474006116208,                  /* Variable: K_pd
                                         * Referenced by: '<S8>/K_pd'
                                         */
-  4.86605504587156,                    /* Variable: K_pp
+  4.7911926605504584,                  /* Variable: K_pp
                                         * Referenced by: '<S8>/K_pp'
                                         */
-  0.52,                                /* Variable: Vd_ff
+  0.45,                                /* Variable: Vd_ff
                                         * Referenced by: '<S5>/Vd_bias'
                                         */
-  6.5,                                 /* Variable: Vs_ff
+  6.4,                                 /* Variable: Vs_ff
                                         * Referenced by: '<S5>/Vs_bias'
                                         */
   1.0,                                 /* Variable: elevation_gain
@@ -274,7 +274,7 @@ P_helicopter_T helicopter_P = {
   0,                                   /* Mask Parameter: HILInitialize_set_pwm_params__f
                                         * Referenced by: '<Root>/HIL Initialize'
                                         */
-  6.2831852,                           /* Expression: 2*3.1415926
+  3.1415926535897931,                  /* Expression: 3.141592653589793
                                         * Referenced by: '<S1>/travel_offset'
                                         */
   0.00076699039394282058,              /* Expression: 2*pi/8192

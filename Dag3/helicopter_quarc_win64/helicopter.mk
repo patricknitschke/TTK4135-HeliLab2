@@ -129,7 +129,7 @@ RELATIVE_PATH_TO_ANCHOR   = ..
 MODELREF_TARGET_TYPE      = NONE
 
 #-- Support for parallel builds
-START_DIR         = C:\Users\jahnpn\Desktop\OptReg-Lab\Dag3
+START_DIR         = C:\Users\jahnpn\Desktop\OptReg-LabNew\Dag3
 MASTER_ANCHOR_DIR = 
 
 #-- Support multi-instance code

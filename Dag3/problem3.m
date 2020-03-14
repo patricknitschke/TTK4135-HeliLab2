@@ -2,7 +2,7 @@
 template_problem_2;
 
 Q_lqr = diag([20,5,1,2]);
-R_lqr = diag(0.0001);
+R_lqr = diag(0.01);
 
 A_lqr = A1;
 B_lqr = B1;
